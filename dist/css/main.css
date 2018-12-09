@@ -55,16 +55,16 @@
     .menu-branding .portrait {
       width: 250px;
       height: 250px;
-      background: url(../img/portrait.jpg);
+      background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: 3px solid #eece1a; }
+      border: solid 3px #cddc39; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.5s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #eece1a; }
+      color: #cddc39; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -76,7 +76,7 @@
     text-decoration: none;
     transition: all 0.5s ease-out; }
     .menu .nav-link:hover {
-      color: #eece1a; }
+      color: #cddc39; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -140,7 +140,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #eece1a; }
+  color: #cddc39; }
 
 main {
   padding: 4rem;
@@ -150,7 +150,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #eece1a;
+        color: #cddc39;
         transition: all 0.5s ease-out; }
   main#home {
     overflow: hidden; }
@@ -166,7 +166,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: 3px solid #eece1a; }
+    border: 3px solid #cddc39; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -179,7 +179,7 @@ main {
   .about-info .job {
     background: #0d0d0d;
     padding: 0.5rem;
-    border-bottom: #eece1a 5px solid; }
+    border-bottom: #cddc39 5px solid; }
 
 .projects {
   display: grid;
@@ -190,7 +190,7 @@ main {
     border: 3px solid #fff; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #eece1a;
+      border-color: #cddc39;
       transition: all 0.5s ease-out; }
 
 .boxes {
@@ -206,8 +206,7 @@ main {
     margin-bottom: 3rem;
     transition: all 0.5s ease-out; }
     .boxes div:hover {
-      padding: 0.5rem 1.5rem;
-      background: #eece1a;
+      background: #cddc39;
       color: #000; }
       .boxes div:hover span {
         color: #000; }
@@ -218,7 +217,7 @@ main {
   border: 0;
   margin-bottom: 0.3rem; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #eece1a;
+    background: #cddc39;
     color: #000; }
 
 .btn-dark {
@@ -278,7 +277,15 @@ main {
     grid-template-columns: repeat(2, 1fr); } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    margin-top: 10vh; }
+  main {
+    padding: 2rem; }
+    main #home h1 {
+      margin-top: 10vh; }
+    main .lg-heading {
+      margin-top: 1rem;
+      font-size: 5rem; }
   .projects {
-    grid-template-columns: 1fr; } }
+    grid-template-columns: 1fr; }
+  .boxes div {
+    font-size: 1.2rem;
+    padding: 0.5rem; } }
